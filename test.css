@@ -1,0 +1,218 @@
+.burger{
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger span{
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before , .burger span::after{
+  content : '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: gold;
+  transition: transform 0.5s ease-in-out;
+}
+.burger span::before {
+  transform: translateY(-10px);
+}
+.burger span::after{
+  transform: translateY(10px);
+}
+
+.burger.active span{
+  background-color: transparent;
+}
+
+.burger.active span::before{
+  transform: translateY(0px) rotate(45deg);
+}
+.burger.active span::after{
+  transform: translateY(0px) rotate(-45deg);
+}
+
+
+
+
+
+ul{
+  list-style: none;
+}
+#background-video {
+  height: 24vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.navbar {  
+  display:flex;
+  align-items:center; 
+  justify-content:space-between;   
+  padding:10px;
+   background-image: url(../WatchFlix/video/video_header.mp4);
+}
+.navbar__links { 
+  display:flex;  
+}
+.navbar__link { 
+  padding:0 10px;
+}
+.navbar__link > a { 
+  font-family:'Nickainley', sans-serif;
+  color: gold;
+  text-decoration:none;
+}
+.burger {
+  display:none;
+}
+
+/*  Small device */
+@media screen and (max-width:767.98px) {
+  .navbar__links { 
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width:0;
+    height:calc(100vh - 65px);  
+    position:absolute;
+    top:90px;
+    right:0;         
+    transform: translateX(110%);
+    transition: all .5s ease-in-out;
+    background-color: black;
+    gap: 0% !important;
+  }
+  .logo-header{
+     width: 47% !important;
+  }
+  .show-nav .navbar__links { 
+    
+    width:100vw;    
+    transform: translateX(0);
+  } 
+  .navbar__link {    
+    transform: translateX(101%);
+    transition: all .5s ease-in-out;
+  }
+  
+  .show-nav .navbar__link  {        
+    transform: translateX(0);    
+  }   
+  .navbar__link > a {
+    display:block;
+    padding:1rem;
+    font-size:1.6rem;
+
+    transition: all .4s ease-in-out;
+  }
+  .navbar__link > a:hover {
+    padding-left:2rem;
+    letter-spacing:5px;
+  }
+  
+  /* Toggle menu */
+  .burger {
+    display:block;
+    position:relative;
+    padding:0;
+    width:45px;
+    height:45px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+  }
+  .bar {
+    display:block;    
+    width:45px;
+    height:4px;  
+    border-radius:3px;
+    transition: all .5s ease-in-out;   
+  }
+  .bar::before, .bar::after {
+    content:"";
+    width:45px;
+    height:4px;
+    position:absolute; 
+    left:0;  
+    border-radius:3px;    
+    transition: all .5s ease-in-out;
+  }
+  .bar::before {
+    transform:translateY(-12px)
+  }
+  .bar::after {
+    transform:translateY(12px)
+  }
+  .show-nav .bar {
+    width:0;
+    background:transparent;    
+  }
+  .show-nav .bar::before {
+    transform:rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform:rotate(-45deg);
+  }
+  
+  /* Bonus - Animations */
+  .show-nav .first {      
+    transition: all 1s ease-out;
+  } 
+  .show-nav .second {      
+    transition: all 1.1s ease-out;
+  } 
+  .show-nav .third {      
+    transition: all 1.2s ease-out;
+  } 
+  .show-nav .four {      
+    transition: all 1.3s ease-out;
+  } 
+  .show-nav .fifth {      
+    transition: all 1.4s ease-out;
+  }
+}
+
+/*  Medium device - Bonus */
+@media screen and (min-width:768px) {
+  .navbar__link > a::after {
+    display:block;
+    content:"";
+    width:0;
+    height:1px;
+    transition:width .4s;
+  }
+  .navbar__link:hover > a::after {
+    width:100%;
+  }
+}
+
+/* bonus */
+.main-content, #section2 {
+  height:100vh;
+}
+
+.navbar__links{
+  gap: 30px;
+
+}
+
+a{
+  font-family:'Nickainley', sans-serif;
+}
