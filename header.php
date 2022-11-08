@@ -23,10 +23,10 @@ $username = $_SESSION['username'];
     <title>WatchFlix</title>
 </head>
 <body>
-<nav class="navbar " role="navigation">
-    <div class="navbar__logo"><img src="../WatchFlix/img/Watch icon.png" alt="" srcset="" style="width:70% ;" class="logo-header"></div>    
+<nav class="navbar">
+    <div class="navbar__logo"><img src="../WatchFlix/img/Watch icon.png" alt="" srcset=""  class="logo-header"></div>    
     <ul class="navbar__links">
-      <li class="navbar__link first"><a href="../WatchFlix/index.php">Accueil</a></li>
+      <li class="navbar__link first"><a href="./index.php">Accueil</a></li>
       <li class="navbar__link second"><a href="./films.php">Films</a></li>
       <li class="navbar__link third"><a href="./series.php">Series</a></li>
       <li class="navbar__link four"><a href="./communauté.php">Communauté</a></li>
@@ -36,7 +36,7 @@ $username = $_SESSION['username'];
       <?php
    
       if(isset($_SESSION['username'])){
-         echo"<li class='navbar__link fifth'><a href='.'>$username</a></li>";
+         echo"<li class='navbar__link fifth'><a href='./connexion.php'>$username</a></li>";
       }else{
         echo "<li class='navbar__link fifth'><a href='./inscription.php'>S'inscrire</a></li>
         <li class='navbar__link fifth'><a href='./connexion.php'>Connexion</a></li>";

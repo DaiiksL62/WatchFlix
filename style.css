@@ -818,27 +818,25 @@ legend{
   #background-video {
     height: 16vh;
     width: 100vw;
-    object-fit: cover;
-    position: absolute;
+
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
   }
   
   .navbar {  
     display:flex;
     align-items:center; 
-    justify-content:space-between;   
+    justify-content:space-between !important;   
     padding:10px;
-     background-image: url(../WatchFlix/video/video_header.mp4);
   }
   .navbar__links { 
     display:flex;  
   }
   .navbar__link { 
-    padding:0 10px;
+    
   }
   .navbar__link > a { 
     font-family:'Nickainley', sans-serif;
@@ -990,7 +988,8 @@ legend{
   }
   
   .navbar__links{
-    gap: 30px;
+    gap: 100px;
+    padding-right: 85px;
   
   }
   

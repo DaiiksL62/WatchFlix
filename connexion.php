@@ -1,6 +1,26 @@
 <?php
 include '../WatchFlix/header.php'
 ?>
+<?php
+if(isset($_SESSION['username'])){
+$username = $_SESSION['username'];
+}
+if(isset($_SESSION['user_kind'])){
+     if($_SESSION['user_kind'] ==  1){
+        exit(header( 'location:../WatchFlix/index_admin.php'));
+    }
+    
+    if($_SESSION['user_kind'] ==  2){
+        exit(header( 'location:../WatchFlix/index_user.php'));
+    }
+}
+    ?>
+
+
+
+
+
+
    <div class="login-form">
 
    <legend> Connecte-toi ! !</legend>
@@ -19,6 +39,7 @@ include '../WatchFlix/header.php'
 
     </div>
 
+    
 
 
 <?php
