@@ -240,7 +240,7 @@ img:hover{
 
 .slider::before,
 .slider::after{
-    background-color: linear-gradient (to right, rgba(255,255,255,1) 0%, rgba (255,255,255,0) 100%);
+  
     content : '';
     height: 100%;
     position:absolute;
@@ -1098,7 +1098,9 @@ legend{
   flex-direction: row;
   justify-content: space-around;
   margin-top: 2%;
+  margin-bottom: 2%;
   font-size: 20px;
+  width: 71%;
 }
 .link-voir-flim{
   font-size: 25px;
@@ -1108,3 +1110,57 @@ legend{
   display: flex;
   
 }
+.liste > #nom , #pseudo, #prenom,#email{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+  .liste{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    gap: 4%;
+    margin-top: 2%;
+    margin-left: 3%;
+    
+
+  }
+  #table{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titre-table{
+    font-size: 37px;
+  }
+  .bg-liste-membre{
+    background-color: #D96868;
+    border-radius: 30px;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  #bouton_delete{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    margin-top: 2%;
+  }
+  #modifier{
+     color: #D96868;
+  }
+  #modifier >a:hover{
+    color: #FAFF00;
+  }
+  #supprimer{
+    color: #FAFF00;
+  }
+  .bg-modifier{
+    background-color: black;
+    border: transparent;
+    border-radius: 20px;
+    width: 9%;
+  }

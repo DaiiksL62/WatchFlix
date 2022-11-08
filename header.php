@@ -3,7 +3,11 @@
 session_start()
 
 ?>
-
+<?php
+if(isset($_SESSION['username'])){
+$username = $_SESSION['username'];
+}
+?>
 
 
 <!DOCTYPE html>
@@ -26,8 +30,18 @@ session_start()
       <li class="navbar__link second"><a href="./films.php">Films</a></li>
       <li class="navbar__link third"><a href="./series.php">Series</a></li>
       <li class="navbar__link four"><a href="./communauté.php">Communauté</a></li>
-      <li class="navbar__link fifth"><a href="./inscription.php">S'inscrire</a></li>
-      <li class="navbar__link fifth"><a href="./connexion.php">Connexion</a></li>
+
+
+
+      <?php
+   
+      if(isset($_SESSION['username'])){
+         echo"<li class='navbar__link fifth'><a href='.'>$username</a></li>";
+      }else{
+        echo "<li class='navbar__link fifth'><a href='./inscription.php'>S'inscrire</a></li>
+        <li class='navbar__link fifth'><a href='./connexion.php'>Connexion</a></li>";
+      }
+      ?>
     </ul>   
     <button class="burger">
       <span class="bar"></span>  
