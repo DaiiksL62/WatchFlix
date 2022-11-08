@@ -1,5 +1,5 @@
 <footer id="footer">
-       <div class="fsttextbloc"><a class="mention" href="../WatchFlix/mention-legales.php">Mention Legales</a></div>
+       <div class="fsttextbloc"><a class="mention" href="../WatchFlix/mentions-legales.php">Mentions Legales</a></div>
        <div class="logo"> 
         <img class="img-footer" src="./img/Watch icon.png" alt="">
        </div>

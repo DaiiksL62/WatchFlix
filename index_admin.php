@@ -5,6 +5,7 @@ include '../WatchFlix/header.php'
 ?>
 <?php
 $id= $_SESSION['id'];
+$username =$_SESSION['username'];
 ?>
 
 
@@ -23,21 +24,23 @@ $id= $_SESSION['id'];
 <div class="link_admin">
 <a class="titre" href="./deco.php">Deconnexion</a>
 <a class="titre" href="./communauté.php">Espace Communauté </a>
-<?php echo "<a class='titre' href='./update_profil.php?id=$id'> Modifier mon profil </a>" ?>
+<?php echo "<a class='titre' href='./update_profil.php?id=$username'> Modifier mon profil </a>" ?>
 
 
 
 <?php
 if($_SESSION['user_kind'] ==  1){
-    echo'<a  class ="titre " href="./gest_membre.php">Gerer les membres </a>';
+    echo"<a class='titre' href='./gest_membre.php?pseudo=$username'>Gerer les membres </a>";
 }
 ?>
 <?php
 if($_SESSION['user_kind'] ==  1){
-    echo'<a class="titre "href="./gest_commentaire">Gerer les commentaires</a>';
+    echo"<a class='titre' href='./gest_commentaire.php?pseudo=$username'>Gerer les commentaire </a>";
 }
 ?>
 </div>
+<br>
+<br>
 <br>
 <br>
 

@@ -1,4 +1,8 @@
 <?php
+$username=$_SESSION['username'];
+?>
+
+<?php
 
 if(empty($_POST['username'])||empty($_POST['user_pass']))
     {
@@ -35,12 +39,10 @@ if(empty($_POST['username'])||empty($_POST['user_pass']))
                  echo $_SESSION['user_kind'];
                  if($_SESSION['user_kind'] == 1){
                 
-                    echo'bebou';
-                 exit(header('location: ./index_admin.php'));
+                 header("location: ./index_admin.php?=$username");
                 }
                 elseif($_SESSION['user_kind'] == 2){
-                    echo 'ggggggggg';
-                      exit(header('location: ./index_user.php'));
+                      header("location: ./index_user.php?=$username");
                    }
                } 
                else{

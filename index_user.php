@@ -5,6 +5,9 @@ include './header.php'
 <?
 session_start();
 ?>
+<?php
+$id= $_SESSION['id'];
+?>
 
  <h1 class= "title1">Bienvenue sur WatchFlix</h1>
 <?php

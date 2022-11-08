@@ -56,7 +56,7 @@ if(!empty($_POST)){
     $req = $pdo->prepare("INSERT INTO inscription SET username = ?, nom = ?, prenom = ?, email= ? , user_pass = ? , photo = ?");
     $password = password_hash($_POST['user_pass'], PASSWORD_BCRYPT);
     $req->execute([$_POST['username'],$_POST['nom'], $_POST['prenom'], $_POST['email'], $password ,$_FILES['photo'] = $avatar]);
-    header('location:../index_membre.php');
+    header("location:../index.php?=id=$username");
 }
     else{
         echo'Erreur';
