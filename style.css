@@ -8,15 +8,6 @@
 
 
 
-
-.barre-nav{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-top: 1%;
-    padding-left: 3%;
-    
-}
 /* Probleme Logo*/
 .logo1{
      margin-top: -4%;
@@ -321,6 +312,8 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
 .button{
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 32%;
+    width: 31%;
 }
 .nom{
     color: #FAFF00;
@@ -818,7 +811,6 @@ legend{
   #background-video {
     height: 16vh;
     width: 100vw;
-
     left: 0;
     right: 0;
     top: 0;
@@ -1109,10 +1101,11 @@ legend{
   display: flex;
   
 }
-.liste > #nom , #pseudo, #prenom,#email{
+.liste > #nom , #pseudo, #prenom,#email , #prename , #name,#uspass ,#confpass{
   display: flex;
   justify-content: space-around;
   font-size: 30px;
+  border-radius: 10px;
 }
   .liste{
     display: flex;
@@ -1162,4 +1155,9 @@ legend{
     border: transparent;
     border-radius: 20px;
     width: 9%;
+  }
+  .formulaire-membre{
+    background: black;
+    display: flex;
+    flex-direction: column;
   }

@@ -21,14 +21,12 @@ $req = $pdo->query("SELECT * FROM inscription");
 while($data=$req->fetch()){
 
 echo  " <div class='liste'> <h1 id='pseudo'>$data->username</h1> <h1 id='nom'>$data->nom</h1> <h1 id='prenom'>$data->prenom</h1> <h1  id='email'>$data->email</h1></div>";
-echo "<td>";
 echo "<div id='bouton_delete'> <button type='oneclick'class='bg-modifier'><a href ='./update_profil.php?id=$data->id' id='modifier'> Modifier </a> </button>";
 echo "<button type='oneclick'class='bg-modifier'> <a href ='./delete_db.php?id=$data->id'id='supprimer' class='supprimer'> Supprimer </a> </button></div>";
   }
   ?>
-  </table>
   </section>
-
+<
 
 <?php
 include '../WatchFlix/footer.php';

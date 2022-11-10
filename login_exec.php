@@ -1,6 +1,4 @@
-<?php
-$username=$_SESSION['username'];
-?>
+
 
 <?php
 
@@ -39,10 +37,10 @@ if(empty($_POST['username'])||empty($_POST['user_pass']))
                  echo $_SESSION['user_kind'];
                  if($_SESSION['user_kind'] == 1){
                 
-                 header("location: ./index_admin.php?=$username");
+                 header("location: ./index_admin.php");
                 }
                 elseif($_SESSION['user_kind'] == 2){
-                      header("location: ./index_user.php?=$username");
+                      header("location: ./index_user.php");
                    }
                } 
                else{

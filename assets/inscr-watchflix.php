@@ -18,10 +18,10 @@ if(!empty($_POST)){
     echo 'Votre mot de passe doit contenir 6 mots';
     }
     elseif(empty($_POST['user_pass'])){
-    echo 'faux6 ';
+    echo 'Pas le bon mot de passe ';
     }
     elseif(($_POST['user_pass']) != ($_POST['confirm_pass'])){
-    echo 'Le Mot de passe n/est pas le meme ';
+    echo 'Le Mot de passe nest pas le meme ';
     }
     else {
         require '../assets/fonction.php';
@@ -56,7 +56,7 @@ if(!empty($_POST)){
     $req = $pdo->prepare("INSERT INTO inscription SET username = ?, nom = ?, prenom = ?, email= ? , user_pass = ? , photo = ?");
     $password = password_hash($_POST['user_pass'], PASSWORD_BCRYPT);
     $req->execute([$_POST['username'],$_POST['nom'], $_POST['prenom'], $_POST['email'], $password ,$_FILES['photo'] = $avatar]);
-    header("location:../index.php?=id=$username");
+    header("location:../index.php");
 }
     else{
         echo'Erreur';
