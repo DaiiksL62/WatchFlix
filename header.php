@@ -20,6 +20,17 @@ $username = $_SESSION['username'];
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
     <title>WatchFlix</title>
+    <script>
+      // The function below will start the confirmation dialog
+      function confirmAction() {
+        let confirmAction = confirm("Are you sure to execute this action?");
+        if (confirmAction) {
+          alert("Action successfully executed");
+        } else {
+          alert("Action canceled");
+        }
+      }
+    </script>
 </head>
 <body>
 <nav class="navbar">

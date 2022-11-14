@@ -533,7 +533,7 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
         display: flex;
         justify-content: center;
         margin-bottom: 10%;
-        margin-top: 10%;
+        margin-top: 19%;
         margin-left: auto;
     margin-right: auto;
         text-align: center;
@@ -599,8 +599,8 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
 }
 
 .comment_area {
-    width: 85%;
-    height: 25vh;
+    width: 69%;
+    height: 100%;
     background-color: #D9D9D9;
     margin-top: 1.4em;
     display: flex;
@@ -616,12 +616,13 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
 }
 
 .comment_area_info_avatar {
-    width: 7.5%;
+    width: 11%;
     height:95%;
     background-color: inherit;
     border-radius: 50%;
-    margin: 0.11em 0 0 0.25em;
-    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 1%;
+   
 }
 
 .pseudo_user_ID {
@@ -634,6 +635,8 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
     font-family: "nick";
     font-size: 2.1em;
     font-weight: 800;
+    background-color: transparent;
+    margin-top: 1%;
 }
 
 .spacement_class {
@@ -876,7 +879,7 @@ legend{
     }
     .show-nav .navbar__links { 
       
-      width:100vw;    
+      max-width: 100%!important;    
       transform: translateX(0);
     } 
     .navbar__link {    
@@ -958,6 +961,23 @@ legend{
     .show-nav .fifth {      
       transition: all 1.4s ease-out;
     }
+
+.title1{
+  margin-top: 21% !important;
+}
+
+.link_admin {
+  display: flex;
+  flex-direction: column !important;
+ 
+  margin-top: 5%;
+  text-align: center;}
+
+  .Date_JJ_MM_AAAA{
+    font-size: 0.7em;
+  }
+
+
   }
   
   /*  Medium device - Bonus */
@@ -1035,7 +1055,7 @@ legend{
 
 .show-nav .navbar__links { 
   margin-top: 14px;
-  width:100vw;    
+  width:80vw;    
   transform: translateX(0);
 } 
 .link_admin{
@@ -1160,4 +1180,13 @@ legend{
     background: black;
     display: flex;
     flex-direction: column;
+  }
+  #img-avatar{
+    border-radius: 34%;
+    transition: none;
+  }
+  .commentaire{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 5%;
   }

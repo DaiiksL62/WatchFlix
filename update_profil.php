@@ -10,11 +10,12 @@ if(!empty($_POST)){
     $username = valid_donnees($_POST['username']);
     $nom = valid_donnees($_POST['nom']);
     $prenom = valid_donnees($_POST['prenom']);
-    
+    $email = valid_donnees($_POST['email']);
+
     require '../WatchFlix/assets/bdd.php';
     $req =$pdo->prepare("UPDATE inscription SET username =?, nom= ?,prenom= ?,email=?,user_pass=? WHERE id=?");
     $password = password_hash($_POST['user_pass'], PASSWORD_BCRYPT);
-    $req->execute(array($_POST['username'],$_POST['nom'],$_POST['prenom'],$_POST['email'],$password,$id_user));
+    $req->execute(array($username,$nom,$prenom,$email,$password,$id_user));
     header("location:./index.php");
 }
 

@@ -26,7 +26,7 @@ include '../WatchFlix/header.php'
     
         </div>
       </div> 
-     <a href="https://hdstream.cool/aZlSTREAMINGV12158" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
+    
     </div>
     <p class="resumé-resp">Los Angeles, de nos jours. Henry est un comédien de stand-up à l’humour féroce. 
             <br>Ann, une cantatrice de renommée internationale.<br>
@@ -49,7 +49,7 @@ include '../WatchFlix/header.php'
              <br>Sortie : 3 août 2022 </p>
         </div>
       </div>
-      <a href="https://www.pandastream.io/2053595-lannee-du-requin.html" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
+     
     </div>
     
     <p class="resumé-resp">Maja, gendarme maritime dans les landes, voit se réaliser son pire cauchemar :<br> prendre sa retraite anticipée !<br>
@@ -77,7 +77,7 @@ include '../WatchFlix/header.php'
              <br>Sortie : 7 septembre 2022 </p>
         </div>
       </div>
-      <a href="https://www.justwatch.com/fr/film/le-visiteur-du-futur-le-film" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
+     
     </div>
     <p class="resumé-resp">2555. Dans un futur dévasté, l’apocalypse menace la Terre.<br>
              Le dernier espoir repose sur un homme capable de voyager dans le temps. <br>
@@ -103,7 +103,6 @@ include '../WatchFlix/header.php'
              <br>Sortie : 12 octobre 2022  </p>
         </div>
       </div>
-      <a href="https://www.justwatch.com/fr/film/jack-mimoun-et-les-secrets-de-val-verde" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
     </div>
     <p class="resumé-resp">Deux ans après avoir survécu seul sur l’île hostile de Val Verde, Jack Mimoun est devenu une star de l’aventure.<br>
         Le livre racontant son expérience est un best-seller et son émission de télévision bat des records d’audience.<br>
@@ -129,7 +128,6 @@ include '../WatchFlix/header.php'
              <br>Sortie : 28 septembre 2022  </p>
         </div>
       </div>
-      <a href="https://papy.papystreaming.stream/jumeaux-mais-pas-trop-2/" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
     </div>
     <p class="resumé-resp">33 ans après leur naissance, deux frères jumeaux découvrent soudainement l’existence l’un de l’autre... <br> 
             <br>Pour Grégoire et Anthony, la surprise est d’autant plus grande que l’un est blanc, l’autre noir !
@@ -154,7 +152,7 @@ include '../WatchFlix/header.php'
              <br>Sortie : 12 octobre 2022  </p>
         </div>
       </div>
-      <a href="https://wvw.enstream.plus/films/simone-le-voyage-du-siecle.html" target="_blank" rel="" class="link-voir-flim">Voir le film</a>
+    
     </div>
     <p class="resumé-resp">Le destin de Simone Veil, son enfance, ses combats politiques, ses tragédies.<br> prendre sa retraite anticipée !<br>
              <br>Le portrait épique et intime d’une femme au parcours hors du commun qui a bousculé son époque en défendant un message humaniste toujours d’une brûlante actualité.<br>
