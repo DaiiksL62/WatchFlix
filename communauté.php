@@ -59,16 +59,17 @@ if(isset($_POST['subbutton'])){
     foreach ($d as $dem) { 
         $req_avatar = $pdo->prepare("SELECT `photo` FROM inscription WHERE `username`= ? LIMIT 1");
         $req_avatar->execute(array($dem->pseudo));
-        $av_watch = $req_avatar->fetch();
+        $avatar_watch = $req_avatar->fetch();
      ?>
         <div class="core_body_communauté_page">
             <div class="comment_area">
                 <div class="comment_area_info">
                     <div class='comment_area_info_avatar'>
-                        <img src="./img/copyimage/<?= $av_watch->photo; ?>" alt="" id="img-avatar">
+                        <?php
+                    echo'<img src="./img/copyimage/'.$_SESSION['photo'].'" alt="" id="image-commentaire">';?>
                     </div>
                     <div class="pseudo_user_ID">
-                        <h1><?= $dem->pseudo;?></h1></div>
+                        <h1 id="pseudo-comment"><?= $dem->pseudo;?></h1></div>
                     <div class="spacement_class"></div>
                     <div class="Date_JJ_MM_AAAA"><?= $dem->date; ?></div>
                 </div>

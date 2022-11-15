@@ -33,7 +33,8 @@ if(empty($_POST['username'])||empty($_POST['user_pass']))
                  
                  $_SESSION['user_kind']= $result['user_kind'];
                  $_SESSION['id']= $result['id'];
-                 
+                 $_SESSION['photo']=$result['photo'];
+
                  echo $_SESSION['user_kind'];
                  if($_SESSION['user_kind'] == 1){
                 

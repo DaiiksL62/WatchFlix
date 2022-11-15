@@ -1,18 +1,13 @@
 <?php
-include './header.php'
+include './header.php';
+$id=$_SESSION['id'];
 ?>
-
-<?
-session_start();
-?>
-<?php
-$id= $_SESSION['id'];
-?>
-
  <h1 class= "title1">Bienvenue sur WatchFlix</h1>
 <?php
  if(isset($_SESSION['username'])){
     echo '<div class="username-login">'.$_SESSION['username'].'</div>';
+    echo'<img src="./img/copyimage/'.$_SESSION['photo'].'" alt="" id="image-avatar">';
+
 }
 ?>
 

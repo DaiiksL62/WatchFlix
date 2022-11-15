@@ -15,6 +15,7 @@ $username =$_SESSION['username'];
 <?php
  if(isset($_SESSION['username'])){
     echo '<div class="username-login">'.$_SESSION['username'].'</div>';
+    echo'<img src="./img/copyimage/'.$_SESSION['photo'].'" alt="" id="image-avatar">';
 }
 ?>
 
