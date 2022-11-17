@@ -20,17 +20,9 @@ $username = $_SESSION['username'];
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
     <title>WatchFlix</title>
-    <script>
-      // The function below will start the confirmation dialog
-      function confirmAction() {
-        let confirmAction = confirm("Are you sure to execute this action?");
-        if (confirmAction) {
-          alert("Action successfully executed");
-        } else {
-          alert("Action canceled");
-        }
-      }
-    </script>
+  
+   
+    
 </head>
 <body>
 <nav class="navbar">
@@ -39,15 +31,18 @@ $username = $_SESSION['username'];
       <li class="navbar__link first"><a href="./index.php">Accueil</a></li>
       <li class="navbar__link second"><a href="./films.php">Films</a></li>
       <li class="navbar__link third"><a href="./series.php">Series</a></li>
-      <li class="navbar__link four"><a href="./communauté.php">Communauté</a></li>
+    
 
 
 
       <?php
    
       if(isset($_SESSION['username'])){
-         echo"<li class='navbar__link fifth'><a href='./connexion.php'>$username</a></li>";
+         echo"<li class='navbar__link fifth'><a href='./communauté.php'>Communauté</a></li>
+         <li class='navbar__link fifth'><a href='./connexion.php'>$username</a></li>";
+
       }else{
+
         echo "<li class='navbar__link fifth'><a href='./inscription.php'>S'inscrire</a></li>
         <li class='navbar__link fifth'><a href='./connexion.php'>Connexion</a></li>";
       }

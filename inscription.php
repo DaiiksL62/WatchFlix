@@ -2,7 +2,7 @@
 include '../WatchFlix/header.php'
 ?>
 
-<h1 class="titre">Inscrit-toi !</h1>
+<h1 class="titre">Inscrit-toi pour pouvoir rejoindre notre communauté !</h1>
 <div class="formulaire1">
 
 

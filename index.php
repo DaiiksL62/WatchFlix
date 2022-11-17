@@ -2,6 +2,28 @@
 include './header.php'
 ?>
 
+<?php
+ if(!isset($_SESSION['username'])){
+   echo'<div class="popup">
+   <div class="contentBox">
+       <div class="close">
+       </div>
+   <h3 class="title-popup">Inscrit toi ou connecte toi pour rejoidre notre communauté !</h3>
+       <div class="imgBx">
+          <img src="./img/Watch_icon.png" alt=""> 
+       </div>
+       <div class="buttonPopup">
+        <a href="./inscription.php" class="link-popup">Inscription</a></li>
+         <a href="./connexion.php" class="link-popup">Connexion</a></li>
+       </div>
+   </div>
+</div>
+';
+ }
+?>
+
+
+
 
 <section>
  <div class="titre">
@@ -227,7 +249,22 @@ include './header.php'
         </div>
 
    </div>
-  
+   <script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block"
+        },2000)
+    }
+ close.addEventListener('click' , () =>{
+    popup.style.display =" none"
+             })
+
+</script>
+
    
 
 <?php

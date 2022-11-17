@@ -8,23 +8,35 @@
     <title>Document</title>
 </head>
 <body>
+<div class="popup">
+    <div class="contentBox">
+        <div class="close">
+        </div>
+    <h4>Inscrit toi ou connecte toi pour rejoidre notre communauté !</h4>
+        <div class="imgBx">
+           <img src="./img/Watch icon.png" alt=""> 
+        </div>
+        <div class="buttonPopup">
+        <li class='navbar__link fifth'><a href='./inscription.php'>S'inscrire</a></li>
+        <li class='navbar__link fifth'><a href='./connexion.php'>Connexion</a></li>
+        </div>
+    </div>
+</div>
 
-<nav class="navbar " role="navigation">
-    <div class="navbar__logo"><img src="../WatchFlix/img/Watch icon.png" alt="" srcset="" style="width:70% ;" class="logo-header"></div>    
-    <ul class="navbar__links">
-      <li class="navbar__link first"><a href="#">Accueil</a></li>
-      <li class="navbar__link second"><a href="#section2">Films</a></li>
-      <li class="navbar__link third"><a href="#">Series</a></li>
-      <li class="navbar__link four"><a href="#">Communauté</a></li>
-      <li class="navbar__link fifth"><a href="#">S'inscrire</a></li>
-      <li class="navbar__link fifth"><a href="#">Connexion</a></li>
-    </ul>   
-    <button class="burger">
-      <span class="bar"></span>  
-    </button>   
-  </nav>
-  <video id="background-video" autoplay loop muted>
-  <source src="../WatchFlix/video/video_header.mp4" type="video/mp4">
-    <script src="app.js"></script>
-</body>
+<script>
+    var popup = document.querySelector('.popup');
+     var close = document.querySelector('.close');
+
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block"
+        },2000)
+    }
+ close.addEventListener('click' , () =>{
+    popup.style.display =" none"
+             })
+
+</script>
+
 </html>
