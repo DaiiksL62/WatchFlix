@@ -25,7 +25,7 @@ $username =$_SESSION['username'];
 <div class="link_admin">
 <a class="titre" href="./deco.php">Deconnexion</a>
 <a class="titre" href="./communauté.php">Espace Communauté </a>
-<?php echo "<a class='titre' href='./update_profil.php'> Modifier mon profil </a>" ?>
+<?php echo "<a class='titre' href='./update_profil.php?id=$id'>Modifier mon profil</a>" ?>
 
 
 

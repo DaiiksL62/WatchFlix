@@ -28,6 +28,7 @@ if(!empty($_POST)){
     $username = valid_donnees($_POST['username']);
     $nom = valid_donnees($_POST['nom']);
     $prenom = valid_donnees($_POST['prenom']);
+    $email = valid_donnees($_POST['email']);
    
     $photoname = 'avatar.png';
     $png_extention = '.jpeg';
@@ -55,7 +56,7 @@ if(!empty($_POST)){
     require "../assets/bdd.php";
     $req = $pdo->prepare("INSERT INTO inscription SET username = ?, nom = ?, prenom = ?, email= ? , user_pass = ? , photo = ?");
     $password = password_hash($_POST['user_pass'], PASSWORD_BCRYPT);
-    $req->execute([$_POST['username'],$_POST['nom'], $_POST['prenom'], $_POST['email'], $password ,$_FILES['photo'] = $avatar]);
+    $req->execute([$username,$nom, $prenom, $email, $password , $avatar]);
     header("location:../index.php");
 }
     else{

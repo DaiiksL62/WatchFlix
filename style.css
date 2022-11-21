@@ -521,7 +521,7 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
         display: flex;
         justify-content: center;
         margin-bottom: 10%;
-        margin-top: 19%;
+        margin-top: 12%;
         margin-left: auto;
     margin-right: auto;
         text-align: center;
@@ -595,7 +595,7 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
     margin-top: 1.4em;
     display: flex;
     flex-direction: column;
-    border-radius: 56px;
+    border-radius: 14px;
 }
 
 .comment_area_info {
@@ -604,7 +604,7 @@ input > #pseudo, #nom, #prenom, #prename, #email, #confirm_pass, #user_kind, #us
     background-color: inherit;
     display: flex;
     flex-direction: row;
-    border-radius: 66px;
+    border-radius: 14px;
 }
 
 .comment_area_info_avatar {
@@ -978,20 +978,33 @@ legend{
   .img-avatar{
     transition: none;
   }
+  #image-avatar{
+    width: 50% !important;
+  }
+  .mention{
+    margin-left: 48px;
+    font-size: 30px;
+  }
   .comment_area_info_avatar{
     width: 30%;
   }
-   .comment_area_space{
-    margin-top: 22px;
+  .input_comment{
+    width: 76%;
+  }
+  .inputer{
+    height: 24vh;
+  }
+   #footer{
+    margin-top: 10%;
    }
    .comment_area{
     width: 90%;
    }
    .commentaire{
     width: 95%;
-margin-top: 5%;
+margin-top: 0%;
 margin-left: 2%;
-margin-bottom: 5%;
+padding-top: 9% !important;
    }
    .formulaire1{
     width: 96%;
