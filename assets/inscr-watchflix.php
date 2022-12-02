@@ -3,22 +3,22 @@ $photoname = ($_FILES['photo']['tmp_name']);
 if(!empty($_POST)){
     $errors = array();
     if(empty($_FILES['photo'])){
-        echo"Insert une image";
+        echo"Veuillez renseigner une photo";
     }
     if(empty($_POST['username'])){
-    echo 'Le pseudo est pas disponible';
+    echo 'Veuillez renseigner un pseudo';
     }
     elseif(empty($_POST['nom'])){
-    echo 'Votre nom est pas disponible';
+    echo 'Veuillez renseigner votre nom';
     } 
     elseif(empty($_POST['prenom'])){
-    echo 'Votre prenom est pas disponible';
+    echo 'Veuillez renseigner votre prenom';
     }
     elseif(strlen($_POST['user_pass']) < 6){
     echo 'Votre mot de passe doit contenir 6 mots';
     }
     elseif(empty($_POST['user_pass'])){
-    echo 'Pas le bon mot de passe ';
+    echo 'Veuillez renseigner un mot de passe ';
     }
     elseif(($_POST['user_pass']) != ($_POST['confirm_pass'])){
     echo 'Le Mot de passe nest pas le meme ';
@@ -29,12 +29,7 @@ if(!empty($_POST)){
     $nom = valid_donnees($_POST['nom']);
     $prenom = valid_donnees($_POST['prenom']);
     $email = valid_donnees($_POST['email']);
-   
-    $photoname = 'avatar.png';
-    $png_extention = '.jpeg';
 
-
-    
 
     
     if ($_FILES['photo']['type'] == 'image/jpeg') {

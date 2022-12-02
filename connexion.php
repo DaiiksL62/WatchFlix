@@ -31,7 +31,7 @@ if(isset($_SESSION['user_kind'])){
 <input type="password" name="user_pass" id="uspass" required >
 
 
-<button type="submit" class="button"><h3>Inscrption</h3></button>
+<button type="submit" class="button"><h3>Connexion</h3></button>
 
 </div>
 

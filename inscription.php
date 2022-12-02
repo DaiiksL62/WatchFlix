@@ -29,8 +29,11 @@ include '../WatchFlix/header.php'
 <label for="confirm_pass">Confirmer votre mot de passe</label>
 <input type="password" name="confirm_pass" id="confpass" required >
 
+<label for="confirm_pass">En cochant cette case , j'accepcte de donner mes données</label>
+<input type="checkbox" name="checkbox" id="checkbox" required >
 
-<button type="submit" class="button"><h3>Inscrption</h3></button>
+
+<button type="submit" class="button"><h3>Inscription</h3></button>
 
 </div>
      
